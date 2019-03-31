@@ -1,0 +1,133 @@
+.render {
+  padding: 2rem 10rem;
+
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+
+  color: #333;
+
+  @include respondsive(lg) {
+    padding: 2rem 5rem;
+  }
+
+  @include respondsive(md) {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .inc {
+    &__title {
+      color: $inc-color;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 0.5rem;
+
+      font-size: 1.3rem;
+
+      @include respondsive(sm) {
+        font-size: 1rem;
+      }
+
+      &--amount {
+        margin-left: auto;
+        margin-right: 1rem;
+
+        color: $inc-color;
+      }
+
+      &--del {
+        cursor: pointer;
+
+        font-size: 1.3rem;
+        color: #c3c3c3;
+
+        @include ease;
+
+        &:hover {
+          color: $exp-color;
+        }
+      }
+    }
+  }
+
+  .exp {
+    &__title {
+      color: $exp-color;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 0.5rem;
+
+      font-size: 1.3rem;
+
+      @include respondsive(sm) {
+        font-size: 1rem;
+      }
+
+      &--amount {
+        margin-left: auto;
+        margin-right: 1rem;
+
+        color: $exp-color;
+      }
+
+      &--percent {
+        margin-right: 1rem;
+        font-size: 1rem;
+        @include respondsive(sm) {
+          font-size: 0.8rem;
+        }
+
+        color: $exp-color;
+        align-self: center;
+
+        padding: 0.2rem 0.3rem;
+
+        border-radius: 2px;
+
+        background: rgba($exp-color, 0.2);
+      }
+
+      &--del {
+        cursor: pointer;
+
+        font-size: 1.3rem;
+
+        color: #c3c3c3;
+
+        @include ease;
+
+        &:hover {
+          color: $exp-color;
+        }
+      }
+    }
+  }
+}

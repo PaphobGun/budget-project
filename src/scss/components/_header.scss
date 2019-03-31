@@ -1,0 +1,119 @@
+.header {
+  background: url(../img/bg-head.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 40vh;
+
+  &__content {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: $primary-color;
+    font-weight: 400;
+
+    &--title {
+      font-size: 1.5rem;
+      @include respondsive(sm) {
+        font-size: 1.1rem;
+      }
+    }
+
+    &--balance {
+      margin-top: 1rem;
+      font-size: 2.8rem;
+    }
+
+    &__inc {
+      background: $inc-color;
+      padding: 0.5rem 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+
+      width: 30rem;
+
+      @include respondsive(md) {
+        width: 20rem;
+      }
+
+      display: grid;
+      grid-template-columns: 90% 1fr;
+
+      font-size: 1.2rem;
+      @include respondsive(sm) {
+        font-size: 0.8rem;
+      }
+
+      &--text {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $secondary-color;
+      }
+
+      &--amount {
+        font-weight: 300;
+      }
+
+      .left {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__exp {
+      background: $exp-color;
+      padding: 0.5rem 1rem;
+
+      width: 30rem;
+
+      @include respondsive(md) {
+        width: 20rem;
+      }
+
+      display: grid;
+      grid-template-columns: 90% 1fr;
+
+      font-size: 1.2rem;
+      @include respondsive(sm) {
+        font-size: 0.8rem;
+      }
+
+      &--text {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $secondary-color;
+      }
+
+      &--amount {
+        font-weight: 300;
+      }
+
+      .left {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .percent--bg {
+        background: rgba(#fff, 0.2);
+        margin-left: 0.5rem;
+        padding: 0.1rem 0.5rem;
+        text-align: center;
+        @include respondsive(md) {
+          padding: 0.1rem 0.1rem;
+        }
+      }
+
+      &--percent {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

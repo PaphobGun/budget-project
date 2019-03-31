@@ -1,0 +1,96 @@
+.input {
+  .container {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include respondsive(sm) {
+      justify-content: space-between;
+    }
+
+    background: #eae5e7;
+  }
+
+  .red {
+    border: solid 1px $exp-color;
+  }
+
+  .green {
+    border: solid 1px $inc-color;
+  }
+
+  .mr-1 {
+    margin-right: 1rem;
+    @include respondsive(sm) {
+      margin-right: 0.2rem;
+    }
+  }
+
+  &__type {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    padding: 0.8rem;
+
+    width: 50%;
+    @include respondsive(sm) {
+      width: 50%;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__amount {
+    font-size: 1rem;
+    padding: 0.8rem;
+
+    width: 10%;
+    @include respondsive(sm) {
+      width: 30%;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__btn {
+    &.redColor {
+      color: $exp-color;
+    }
+
+    &.greenColor {
+      color: $inc-color;
+    }
+
+    font-size: 2rem;
+    background: none;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    @include ease;
+
+    &:hover {
+      opacity: 0.7;
+      transform: scale(1.5);
+    }
+
+    &:active {
+      opacity: 0.7;
+      transform: scale(1.5) translateY(0.5rem);
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
