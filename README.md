@@ -1,4 +1,4 @@
-# Budjet - Project
+# Budget - Project
 This is a basic web application.Create by vanilla JS and no CSS library ( used only sass ).
 User can add an income or expense to calculate percentage/balance
 
