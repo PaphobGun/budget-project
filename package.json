@@ -1,5 +1,5 @@
 {
-  "name": "budjet-project",
+  "name": "budget-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://PaphobGun.github.io/budjet-project",
+  "homepage": "https://PaphobGun.github.io/budget-project",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "autoprefixer": "^9.5.0",
